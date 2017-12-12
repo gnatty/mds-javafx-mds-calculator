@@ -1,6 +1,12 @@
+
 # MDS CALCULATOR
 
-## Executable
+## Download jar + soure code
+
+* [Download compressed archive](https://github.com/gnatty/mds-javafx-mds-calculator/raw/master/mds-calculator.zip)
+
+
+## Executable (jar)
 ```
 -> /mds_calculator.jar
 ```
