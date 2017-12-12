@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="mds-calculator:jar" />
+      <artifact name="mds-calculator" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -66,8 +66,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+            <state relative-caret-position="640">
+              <caret line="182" column="10" lean-forward="false" selection-start-line="182" selection-start-column="9" selection-end-line="182" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -257,8 +257,8 @@
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="project" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -584,8 +584,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        <state relative-caret-position="640">
+          <caret line="182" column="10" lean-forward="false" selection-start-line="182" selection-start-column="9" selection-end-line="182" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -596,7 +596,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>mds-calculator:jar</last-edited>
+          <last-edited>mds-calculator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

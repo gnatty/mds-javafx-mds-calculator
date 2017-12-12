@@ -183,9 +183,7 @@ public class Main extends Application {
         Label lbl = new Label(value);
         lbl.setMaxWidth(Double.MAX_VALUE);
         lbl.setStyle("-fx-alignment:center;");
-        lbl.setPadding(
-                new Insets(0, 0, 20, 0)
-        );
+        lbl.setPadding(new Insets(0, 0, 20, 0));
         HBox.setHgrow(lbl, Priority.ALWAYS);
         return lbl;
     }
