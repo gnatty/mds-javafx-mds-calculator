@@ -10,4 +10,6 @@
 -> /project
 ```
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+| Default view | View with a result
+| --- | ---
+| ![alt text](https://raw.githubusercontent.com/gnatty/mds-javafx-mds-calculator/master/docs/app_empty.png "Default app view") | ![alt text](https://raw.githubusercontent.com/gnatty/mds-javafx-mds-calculator/master/docs/app_with_result.png "App view with a result")
