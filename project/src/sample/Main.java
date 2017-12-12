@@ -93,6 +93,12 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    /*
+    * Create default HBox Object.
+    *
+    * @return HBox
+    *
+    */
     public HBox createHBox() {
         HBox hbox = new HBox();
         hbox.setPadding(
@@ -102,6 +108,15 @@ public class Main extends Application {
         return hbox;
     }
 
+    /*
+    * Create default Button Object.
+    * Call method @handleActionClick
+    *
+    * @param String value - Button text value.
+    * @param Boolean isDisabled - Button state.
+    * @return Button
+    *
+    */
     public Button createButton(String value, Boolean isDisabled) {
         Button btn = new Button();
         btn.setText(value);
@@ -115,6 +130,11 @@ public class Main extends Application {
         return btn;
     }
 
+    /*
+    * Update the value "setDisable" on a given Boolean value
+    * for all the ACTION_BUTTON.
+    *
+    */
     public void updateBtnState(Boolean newState) {
         btnDivide.setDisable(newState);
         btnAddition.setDisable(newState);
@@ -122,6 +142,17 @@ public class Main extends Application {
         btnSubtraction.setDisable(newState);
     }
 
+    /*
+    * Create default TextField Object
+    *
+    * @Listener
+    * Check the correct text format.
+    * - Clear TextField is there an alphabetic character.
+    * - Enabled ACTION_BUTTON if both TextField contains only Numbers.
+    * - Disable ACTION_BUTTON if at least one TextField is empty.
+    *
+    * @return TextField
+    */
     public TextField createTextField() {
         TextField txtF = new TextField();
         txtF.setMaxWidth(Double.MAX_VALUE);
@@ -142,6 +173,12 @@ public class Main extends Application {
         return txtF;
     }
 
+    /*
+    * Create default Label Bbject.
+    *
+    * @param String value - label value.
+    * @return Label
+    */
     public Label createLabel(String value) {
         Label lbl = new Label(value);
         lbl.setMaxWidth(Double.MAX_VALUE);
@@ -153,6 +190,11 @@ public class Main extends Application {
         return lbl;
     }
 
+    /*
+    * Handle On Mouse Pressed on Button(Clear)
+    * Clear all TextField to empty value and reset label to "?".
+    *
+    */
     public EventHandler<javafx.scene.input.MouseEvent> handleOnClear() {
         return new EventHandler<javafx.scene.input.MouseEvent>() {
             @Override
@@ -164,11 +206,15 @@ public class Main extends Application {
         };
     }
 
+    /*
+    * Handle On Mouse Pressed on Button(+, -, *, /)
+    * Call the @doArithmetic method.
+    *
+    */
     public EventHandler<javafx.scene.input.MouseEvent> handleActionClick() {
         return new EventHandler<javafx.scene.input.MouseEvent>() {
             @Override
             public void handle(javafx.scene.input.MouseEvent event) {
-                System.out.println("ok");
                 // -- Get the Button. [ACTION_TYPE].
                 Button btn = (Button) event.getSource();
                 // -- Get value of TextField.
@@ -185,6 +231,16 @@ public class Main extends Application {
         };
     }
 
+    /*
+    * Do arithmetic.
+    *
+    * @param String action - Action type
+    * @param double num1 - First value
+    * @param double num2 - Second value
+    *
+    * @return String - A formatted string result.
+    *
+    */
     public String doArithmetic(String action, double num1, double num2) {
         Double result = 0.0;
         switch (action) {
